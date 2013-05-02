@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+
 
 body {
 	margin: 0;
@@ -8,11 +8,11 @@ body {
 	font-size: 11px;
 	line-height: 20px; 
 	background-attachment: fixed;
-	background-image:url('logo.png');
+	background-image:url('../Images/Logo.png');
 }
 
-#1stcolumn {
-	
+#firstcolumn {
+	background-color:#FFD700;
 	
 	
 }

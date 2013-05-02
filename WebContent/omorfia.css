@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 20px; 
+	background-attachment: fixed;
+	background-image:url('logo.png');
+}
+
+#1stcolumn {
+	
+	
+	
+}
+
+ 

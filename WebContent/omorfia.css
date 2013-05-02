@@ -3,12 +3,12 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: #555;
+	color: black, #555;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 20px; 
 	background-attachment: fixed;
-	background-image:url('../Images/Images.jpg');
+	background-image:url('../Images/thalassa.jpg');
 }
 
 p {
@@ -25,14 +25,18 @@ p {
 }
 
 #header {
-	background-color:#FFA500; 
+	background-color: rgba(0, 0, 0, 0);
 	height:80px;
 	margin-left: 20px;
 }
 
 
 #firstcolumn {
-	background-color:#FFD700;
+	background-color: rgb(204, 204, 255);
+	border:#335F87;
+	border-width:1 px;
+	background-image:url('../Images/mple.jpg');
+	background-size: 300px 411px;
 	height:411px;
 	width:300px;
 	float:left;
@@ -46,7 +50,7 @@ p {
 	height:411px;
 	width:620px;
 	float:left; 
-	margin-left: 20px;
+	margin-left: 16px;
 	margin-top: 10px;
 }
 

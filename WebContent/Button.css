@@ -1,0 +1,24 @@
+
+.classname {
+	-moz-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	background-color:#4b90d1;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 54px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #528ecc;
+}.classname:hover {
+	background-color:#335f87;
+}.classname:active {
+	position:relative;
+	top:1px;
+}
+

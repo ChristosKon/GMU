@@ -8,13 +8,47 @@ body {
 	font-size: 11px;
 	line-height: 20px; 
 	background-attachment: fixed;
-	background-image:url('../Images/Logo.png');
+	background-image:url('../Images/Images.jpg');
 }
+
+p {
+	font-size:12px;
+	line-height: 22px;
+}
+
+#container {
+	width:960px; 
+	text-align:center; 
+	height:411px; 
+	margin-left:204px; 
+	margin-right:204px;
+}
+
+#header {
+	background-color:#FFA500; 
+	height:80px;
+	margin-left: 20px;
+}
+
 
 #firstcolumn {
 	background-color:#FFD700;
-	
+	height:411px;
+	width:300px;
+	float:left;
+	margin-left: 20px;
+	margin-top: 10px;
 	
 }
+
+#secondcolumn {
+	background-color:#EEEEEE;
+	height:411px;
+	width:620px;
+	float:left; 
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
 
  

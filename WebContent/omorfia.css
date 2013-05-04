@@ -1,4 +1,10 @@
-
+#foto2{ 
+  background:no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
 	margin: 0;
@@ -7,8 +13,6 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 20px; 
-	background-attachment: fixed;
-	background-image:url('../Images/thalassa.jpg');
 }
 
 p {
@@ -28,13 +32,23 @@ p {
 	background-color: rgba(0, 0, 0, 0);
 	height:80px;
 	margin-left: 20px;
+	text-align: center;
+	width: 100%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 1.3em;
+	font-style: normal;
+	color: #000000;
+	position: relative;
+
 }
 
 
 #firstcolumn {
 	background-color: rgb(204, 204, 255);
 	border:#335F87;
-	border-width:1 px;
+	border-width: 1 px;
 	background-image:url('../Images/mple.jpg');
 	background-size: 300px 411px;
 	height:411px;
@@ -52,7 +66,144 @@ p {
 	float:left; 
 	margin-left: 16px;
 	margin-top: 10px;
+	
 }
 
+/* contact.html */
 
+#firstcolumn2 {
+	background-color: #2d2d2d;
+	border:#335F87;
+	height:411px;
+	width:350px;
+	float:left;
+	margin-left: 20px;
+	margin-top: 10px;
+	-webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+     border-radius: 15px;
+     border:solid 1px #444;
+}
+
+#secondcolumn2 {
+	background-color:#F2F2F2;
+	height:201px;
+	width:250px;
+	float:left; 
+	margin-left: 6px;
+	margin-top: 10px;
+	-webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      border:solid 1px #444;
+}
  
+#header2 {
+	height:40px;
+	width:350px;
+	background-color: transparent;
+	border-bottom-width: 1px;
+	border-bottom-color: #DDDDDD;
+	text-align: center;
+	font-size: 18px;
+	line-height: 2em;
+	font-style: normal;
+	color:#FFFFFF;
+}
+.clearfix {
+	height: 30px;
+	width: 350px;
+}
+
+input.text {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      border:solid 1px #444;
+      font-size: 14px;
+      width: 80%;
+      padding: 7px 8px 7px 30px;
+      -moz-box-shadow: 0px 1px 0px #777;
+      -webkit-box-shadow: 0px 1px 0px #777;
+	  background: #ddd url('../Images/img/inputSprite.png') no-repeat 4px 5px;
+	  background: url('../Images/img/inputSprite.png') no-repeat 4px 5px, -moz-linear-gradient(
+           center bottom,
+           rgb(225,225,225) 0%,
+           rgb(215,215,215) 54%,
+           rgb(173,173,173) 100%
+           );
+	  background:  url('../Images/img/inputSprite.png') no-repeat 4px 5px, -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, rgb(225,225,225)),
+          color-stop(0.54, rgb(215,215,215)),
+          color-stop(1, rgb(173,173,173))
+          );
+      color:#333;
+      text-shadow:0px 1px 0px #FFF;
+}	  
+
+ input#email { 
+ 	background-position: 4px 5px; 
+	background-position: 4px 5px, 0px 0px;
+	}
+	
+ input#name { 
+ 	background-position: 4px -46px; 
+	background-position: 4px -46px, 0px 0px; 
+	}
+	
+textarea {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      border:solid 1px #444;
+      font-size: 14px;
+      width: 80%;
+      padding: 7px 20px 7px 8px;
+      -moz-box-shadow: 0px 1px 0px #777;
+      -webkit-box-shadow: 0px 1px 0px #777;
+	  background:-moz-linear-gradient(
+           center bottom,
+           rgb(225,225,225) 0%,
+           rgb(215,215,215) 54%,
+           rgb(173,173,173) 100%
+           );
+	  background: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, rgb(225,225,225)),
+          color-stop(0.54, rgb(215,215,215)),
+          color-stop(1, rgb(173,173,173))
+          );
+      color:#333;
+      text-shadow:0px 1px 0px #FFF;
+}	  
+.nicebutton {
+	-moz-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	background-color:#82bdf5;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 54px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #528ecc;
+}
+.nicebutton:hover {
+	background-color:#5493c9;
+}
+.nicebutton:active {
+	position:relative;
+	top:1px;
+}
+	
+

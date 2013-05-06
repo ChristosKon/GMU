@@ -10,9 +10,14 @@ body {
 	margin: 0;
 	padding: 0;
 	color: black, #555;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 11px;
 	line-height: 20px; 
+}
+
+section {
+	width: 900px;
+	margin: 0 auto;
 }
 
 p {
@@ -205,5 +210,25 @@ textarea {
 	position:relative;
 	top:1px;
 }
-	
-
+.classname {
+	-moz-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	box-shadow:inset 0px 0px 0px 0px #a2c8eb;
+	background-color:#82bdf5;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 54px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #528ecc;
+}.classname:hover {
+	background-color:#5493c9;
+}.classname:active {
+	position:relative;
+	top:1px;
+}

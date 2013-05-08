@@ -14,10 +14,14 @@ body {
 	line-height: 20px; 
 }
 
+a {
+	text-decoration: none;
+}
+
 header {
 	overflow: auto;
 	height: 50px;
-	background: lightBlue;
+	background: whiteSmoke;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -37,7 +41,8 @@ h1 {
 }
 
 section {
-	padding-top:60px;
+	padding:60px 50px 0;
+	overflow: auto;
 }
 
 section:not(:last-child) {
@@ -60,8 +65,14 @@ p {
 }
 
 .column {
+	max-width: 500px;
+	width: 500px;
 	display: inline-block;
-	width: 40%;
+}
+
+.column:first-child {
+	float: left;
+	margin-right: 100px;
 }
 
 #container {

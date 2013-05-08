@@ -14,8 +14,13 @@ body {
 	line-height: 20px; 
 }
 
-a {
+a, a:visited {
 	text-decoration: none;
+	color: #026282;
+}
+
+a:hover {
+	color: #2d76b9;
 }
 
 header {

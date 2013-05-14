@@ -110,37 +110,29 @@ p {
 
 #application-buttons > div {
 	display: inline-block;
-	margin: 20px;
+	margin: 10px;
+}
+
+form input {
+	margin-bottom: 10px;
 }
 
 input.text {
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      border-radius: 15px;
-      border:solid 1px #444;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border:solid 1px #555;
       font-size: 14px;
       width: 80%;
-      padding: 7px 8px 7px 30px;
-      -moz-box-shadow: 0px 1px 0px #777;
-      -webkit-box-shadow: 0px 1px 0px #777;
-	  background: #ddd url('../img/inputSprite.png') no-repeat 4px 5px;
-	  background: url('../img/inputSprite.png') no-repeat 4px 5px, -moz-linear-gradient(
-           center bottom,
-           rgb(225,225,225) 0%,
-           rgb(215,215,215) 54%,
-           rgb(173,173,173) 100%
-           );
-	  background:  url('../img/inputSprite.png') no-repeat 4px 5px, -webkit-gradient(
-          linear,
-          left bottom,
-          left top,
-          color-stop(0, rgb(225,225,225)),
-          color-stop(0.54, rgb(215,215,215)),
-          color-stop(1, rgb(173,173,173))
-          );
+      padding: 7px 8px 7px 36px;
+	  background:  url('../img/inputSprite.png') no-repeat 4px 5px, whiteSmoke;
       color:#333;
       text-shadow:0px 1px 0px #FFF;
-}	  
+}
+
+textarea:focus, input:focus {
+	outline: none!important;
+}
 
 #email { 
  	background-position: 4px 5px; 
@@ -153,31 +145,16 @@ input.text {
 }
 	
 textarea {
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      border-radius: 15px;
-      border:solid 1px #444;
-      font-size: 14px;
-      width: 80%;
-      padding: 7px 20px 7px 8px;
-      -moz-box-shadow: 0px 1px 0px #777;
-      -webkit-box-shadow: 0px 1px 0px #777;
-	  background:-moz-linear-gradient(
-           center bottom,
-           rgb(225,225,225) 0%,
-           rgb(215,215,215) 54%,
-           rgb(173,173,173) 100%
-           );
-	  background: -webkit-gradient(
-          linear,
-          left bottom,
-          left top,
-          color-stop(0, rgb(225,225,225)),
-          color-stop(0.54, rgb(215,215,215)),
-          color-stop(1, rgb(173,173,173))
-          );
-      color:#333;
-      text-shadow:0px 1px 0px #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:solid 1px #555;
+	font-size: 14px;
+	width: 80%;
+	padding: 7px 36px 7px 8px;
+	background: whiteSmoke;
+	color:#333;
+	text-shadow:0px 1px 0px #FFF;
 }
 		
 .nicebutton {
@@ -220,7 +197,7 @@ textarea {
 	font-family:Arial;
 	font-size:18px;
 	font-weight:bold;
-	padding:5px 54px;
+	padding:5px 42px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #528ecc;
 }

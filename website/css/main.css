@@ -9,24 +9,9 @@
 body {
 	padding: 0;
 	color: black, #555;
-	font-family: Arial, sans-serif;
-	line-height: 20px; 
-	font-size: 11px;
-}
-
-a, a:visited {
-	text-decoration: none;
-	color: #026282;
-}
-
-a:hover {
-	color: #2d76b9;
 }
 
 header {
-	overflow: auto;
-	height: 50px;
-	background: whiteSmoke;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,8 +20,16 @@ header {
 	z-index: 20;
 }
 
+header > .navbar-inner {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
 h1 {
-	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
 }
 
 #content-container {
@@ -53,7 +46,7 @@ section {
 section:not(:last-child) {
 	margin-bottom: 30px;
 }
-
+/*
 nav {
 	line-height: 50px;
 	margin-left: 300px;
@@ -63,7 +56,7 @@ nav {
 nav a:not(:last-child) {
 	margin-right: 20px;
 }
-
+*/
 p {
 	font-size:12px;
 	line-height: 22px;

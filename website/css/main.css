@@ -110,3 +110,8 @@ textarea {
 #contact div:last-child h2 {
 	margin-top: 0;
 }
+
+#map-container {
+	border: 0;
+	width: 100%;
+}

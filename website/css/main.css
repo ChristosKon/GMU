@@ -111,9 +111,12 @@ p {
 
 #organizers {
 	padding-top: 45px;
-	/*background-image: url("../img/organizers-background.png");*/
-	background-position:  left 500px;
-	background-repeat: repeat-x;
+	background-image: url("../img/thalassa.jpg");
+	background-repeat: repeat;
+}
+
+#organizers .thumbnail {
+	background: white;
 }
 
 textarea {

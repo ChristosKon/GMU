@@ -5,9 +5,10 @@
 		<link href="css/main.css" rel="stylesheet" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="bootstrap/js/scrollspy.js"></script>
 		<title>Greece Me Up Vol 2</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar">
 		<header class="navbar">
 			<div class="navbar-inner">
 				<h1 class="brand"><a href=".">Greece Me Up Vol 2</a></h1>
@@ -119,6 +120,7 @@
 			};
 			$(window).resize(adjustMap);
 			adjustMap();
+			$('.navbar').scrollspy();
 		</script>
 	</body>
 </html>

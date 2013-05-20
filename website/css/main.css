@@ -111,6 +111,9 @@ p {
 
 #organizers {
 	padding-top: 45px;
+	/*background-image: url("../img/organizers-background.png");*/
+	background-position:  left 500px;
+	background-repeat: repeat-x;
 }
 
 textarea {

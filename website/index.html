@@ -115,7 +115,7 @@
 				$(this).attr('src', 'img/organizers/' + $(this).data('src'));
 			});
 			function adjustMap () {
-				$('#map-container').height($(window).innerHeight() - $('header').height())
+				$('#map-container, section').height($(window).innerHeight() - $('header').height())
 			};
 			$(window).resize(adjustMap);
 			adjustMap();

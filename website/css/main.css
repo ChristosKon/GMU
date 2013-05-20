@@ -39,8 +39,8 @@ h1 {
 }
 
 section {
-	padding:60px 50px 0;
-	overflow: auto;
+	padding:42px 50px 0;
+	overflow: hidden;
 }
 
 section:not(:last-child) {
@@ -79,11 +79,12 @@ p {
 #home .content {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background-color: white;
 }
 
 #home .content p {
 	text-indent: 50px;
-	text-align: justify;
+	text-align: center;
 }
 
 #home .content .tagline {
@@ -93,6 +94,12 @@ p {
 	margin: 10px;
 }
 
+#home {
+	background-image: url("../img/home-background.jpg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
 #application-buttons {
 	text-align: center;
 }
@@ -100,6 +107,10 @@ p {
 #application-buttons > div {
 	display: inline-block;
 	margin: 10px;
+}
+
+#organizers {
+	padding-top: 45px;
 }
 
 textarea {
@@ -114,5 +125,4 @@ textarea {
 #map-container {
 	border: 0;
 	width: 100%;
-	overflow: false;
 }

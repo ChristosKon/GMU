@@ -114,4 +114,5 @@ textarea {
 #map-container {
 	border: 0;
 	width: 100%;
+	overflow: false;
 }

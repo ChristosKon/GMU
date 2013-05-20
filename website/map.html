@@ -9,28 +9,37 @@
 		</style>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_XEVQQVO4YRNZ7bZP6S6R9cV2ZJIBmMU&sensor=false"></script>
 		    <script type="text/javascript">
-				var map = null;
-				var markers = [];
+				var map;
 				var NTUAMarker = {
-					position: [-25.363882,131.044922],
+					position: [37.979014177831374, 23.78294348716736],
 					title: 'National Technical University of Athens'
 				};
 				var AridaiaMarker = {
-					position: [0,0],
+					position: [40.9735305, 22.06101089999993],
 					title: 'Aridaia'
 				};
 				var PosidiMarker = {
-					position: [0,0],
-					title: 'Posidi'
+					position: [39.96392120000001, 23.3804437],
+					title: 'Kalandra University Camp (Posidi)'
 				};
+				var markers = [NTUAMarker, AridaiaMarker, PosidiMarker];
+				var mapMarkers = [];
 				function initialize() {
 					var mapOptions = {
 						center: new google.maps.LatLng(39.0967576528027, 23.41133398437501),
 						zoom: 7,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					};
-					map = new google.maps.Map(document.getElementById("map-canvas"),
-											  mapOptions);
+					map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+					for (var i in markers) {
+						var marker = markers[i], obj;
+						obj = new google.maps.Marker({
+							position: new google.maps.LatLng(marker.position[0], marker.position[1]),
+							map: map,
+							title: marker.title
+						});
+						mapMarkers.push(obj);
+					}
 				}
 				google.maps.event.addDomListener(window, 'load', initialize);
     	</script>

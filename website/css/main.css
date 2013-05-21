@@ -33,7 +33,6 @@ h1 {
 }
 
 #content-container {
-	width: 1200px;
 	margin: 0 auto;
 	overflow: auto;
 }
@@ -41,6 +40,8 @@ h1 {
 section {
 	padding:42px 50px 0;
 	overflow: hidden;
+	margin: auto;
+	width:1100px;
 }
 
 section:not(:last-child) {
@@ -64,11 +65,8 @@ p {
 }
 
 #container {
-	width:960px; 
 	text-align:center; 
 	height:411px; 
-	margin-left:204px; 
-	margin-right:204px;
 }
 
 #home h2 {
@@ -109,10 +107,13 @@ p {
 	margin: 10px;
 }
 
-#organizers {
-	padding-top: 45px;
+.sectionBackground.organizers {
 	background-image: url("../img/thalassa.jpg");
 	background-repeat: repeat;
+}
+
+#organizers {
+	padding-top: 45px;
 }
 
 #organizers .thumbnail {

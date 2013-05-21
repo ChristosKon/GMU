@@ -117,7 +117,11 @@
 				$(this).attr('src', 'img/organizers/' + $(this).data('src'));
 			});
 			function adjustMap () {
-				$('#map-container, section').height($(window).innerHeight() - $('header').height())
+				var targetHeight = $(window).innerHeight() - $('header').height();
+				$('#map-container, section').each(function () {
+					if ($(this).height() < targetHeight)
+						$(this).height(targetHeight);
+				};
 			};
 			$(window).resize(adjustMap);
 			adjustMap();

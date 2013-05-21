@@ -118,6 +118,7 @@ p {
 
 #organizers .thumbnail {
 	background: white;
+	display: inline-block;
 }
 
 textarea {

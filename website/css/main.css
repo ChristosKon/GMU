@@ -121,6 +121,12 @@ p {
 	display: inline-block;
 }
 
+.sectionBackground.contact {
+	background-image: url("../img/images5.jpg");
+	background-repeat: no-repeat;
+	position: center bottom;
+}
+
 textarea {
 	display: block;
 	width: 430px;

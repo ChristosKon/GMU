@@ -140,3 +140,10 @@ textarea {
 	border: 0;
 	width: 100%;
 }
+
+.sectionBackground.about {
+	background-image: url("../img/sky.jpg");
+	background-repeat: repeat;
+	position: top center;
+    
+}

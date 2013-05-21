@@ -20,7 +20,6 @@
 					<li><a href="#organizers">Organizers</a></li>
 					<li class="divider-vertical"></li>
 					<li><a href="#contact" >Get in touch</a></li>
-					
 				</ul>
 			</div>
 		</header>
@@ -121,9 +120,9 @@
 			});
 			function adjustMap () {
 				var targetHeight = $(window).innerHeight() - $('header').height();
+				targetHeight += 'px';
 				$('#map-container, section').each(function () {
-					if ($(this).height() < targetHeight)
-						$(this).height(targetHeight);
+						$(this).css('min-height', targetHeight);
 				});
 			};
 			$(window).resize(adjustMap);

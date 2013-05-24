@@ -87,7 +87,7 @@ p {
 
 #home .content p {
 	text-indent: 50px;
-	text-align: center;
+	text-align: justify;
 }
 
 #home .content .tagline {
@@ -97,11 +97,17 @@ p {
 	margin: 10px;
 }
 
+#home .column:last-child {
+	padding-top: 15px;
+}
+
+/*
 #home {
 	background-image: url("../img/home-background.jpg");
 	background-position: bottom center;
 	background-repeat: no-repeat;
 }
+*/
 
 #application-buttons {
 	text-align: center;

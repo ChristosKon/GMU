@@ -112,7 +112,7 @@ p {
 	background-repeat: repeat;
 }
 
-#organizers {
+#organizers, #participants {
 	padding-top: 45px;
 }
 

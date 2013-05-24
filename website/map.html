@@ -35,10 +35,16 @@
 			font-size: 16px;
 			margin-right: 15px;
 		  }
+		  #info-content {
+		  	padding: 15px;
+		  }
+		  #info-content > div {
+		  	display: none;
+		  }
 		</style>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_XEVQQVO4YRNZ7bZP6S6R9cV2ZJIBmMU&sensor=false"></script>
 		    <script type="text/javascript">
-				var map, infoWindow, infoTitle;
+				var map, infoWindow, infoTitle, infoActive = null;
 				var NTUAMarker = {
 					position: [37.979014177831374, 23.78294348716736],
 					title: 'National Technical University of Athens'
@@ -72,6 +78,15 @@
 						obj.addListener('click', function (){
 							infoWindow.style.display = 'block';
 							infoTitle.textContent = this.title;
+							if (infoActive)
+								infoActive.style.display = 'none';
+							for (var i=0; i<infoContent.children.length; i++) {
+								var current = infoContent.children[i];
+								if (current.getAttribute('data-title') == this.title) {
+									current.style.display = 'block';
+									infoActive = current;
+								}
+							}
 						})
 						mapMarkers.push(obj);
 					}
@@ -86,13 +101,23 @@
 				<h2 id="info-title"></h2>
 				<div id="close-button">&times;</div>
 			</div>
+			<div id="info-content">
+				<div data-title="National Technical University of Athens">NTUA</div>
+				<div data-title="Aridaia">ARIDAIA</div>
+				<div data-title="Kalandra University Camp (Posidi)">POSIDI</div>
+			</div>
 		</div>
 		<script>
 			var closeButton = document.getElementById('close-button');
 			infoWindow = document.getElementById('info');
-			infoTitle = document.getElementById('info-title')
+			infoTitle = document.getElementById('info-title');
+			infoContent = document.getElementById('info-content');
 			closeButton.onclick = function () {
 				infoWindow.style.display = 'none';
+			}
+			document.onkeydown = function (e) {
+				if (e.keyCode == 27)
+					infoWindow.style.display = 'none';
 			}
 		</script>
 	</body>

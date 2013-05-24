@@ -20,6 +20,10 @@ header {
 	z-index: 20;
 }
 
+.navbar .brand {
+	padding-top: 6px;
+}
+
 header > .navbar-inner {
 	border-radius: 0;
 	-moz-border-radius: 0;

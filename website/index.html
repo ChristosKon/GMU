@@ -119,9 +119,12 @@
 			 *  gets clicked
 			 */
 			$('.nav a').click(function(){
+				var href = $(this).attr('href');
 				$('html, body').animate({
 					scrollTop: $( $.attr(this, 'href') ).offset().top
-				}, 500);
+				}, 500, function (){
+					window.location.hash = href;
+				});
 				return false;
 			});
 			

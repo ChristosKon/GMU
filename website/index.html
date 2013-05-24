@@ -113,20 +113,39 @@
 			</div>
 		</div>
 		<script>
+			/*
+			 *  Code for scrolling page up and down
+			 *  smoothly when a navigation link
+			 *  gets clicked
+			 */
+			$('.nav a').click(function(){
+				$('html, body').animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+			});
+			
+			/*
+			 *  Code for showing different organizer
+			 *  faces on mouseover and mouseout
+			 */
 			$('#organizers img').mouseover(function (){
 				$(this).attr('src', 'img/organizers/' + $(this).data('src-hover'));
 			}).mouseout(function (){
 				$(this).attr('src', 'img/organizers/' + $(this).data('src'));
 			});
-			function adjustMap () {
+			
+			/*
+			 *  Code to adjust the section size according to the 
+			 *  screen/window size
+			 */
+			function adjustSection () {
 				var targetHeight = $(window).innerHeight() - $('header').height();
 				targetHeight += 'px';
-				$('#map-container, section').each(function () {
-						$(this).css('min-height', targetHeight);
-				});
+				$('#map-container, section').css('min-height', targetHeight);
 			};
-			$(window).resize(adjustMap);
-			adjustMap();
+			$(window).resize(adjustSection);
+			adjustSection();
 			$('.navbar').scrollspy();
 		</script>
 	</body>

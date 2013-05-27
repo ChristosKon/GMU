@@ -1,11 +1,3 @@
-#foto2{ 
-  background:no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
 	padding: 0;
 	color: black, #555;
@@ -77,17 +69,21 @@ p {
 #home h2 {
 	text-align: center;
 	margin-top: 0;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #home .content {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	background-color: white;
+	background-color: transparent;
+	/*font-weight:bold; */
+	color: white; text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #home .content p {
 	text-indent: 50px;
 	text-align: justify;
+	font-size:*20px;
 }
 
 #home .content .tagline {
@@ -101,13 +97,17 @@ p {
 	padding-top: 15px;
 }
 
-/*
+
 #home {
-	background-image: url("../img/home-background.jpg");
-	background-position: bottom center;
+	/*background-image: url("../img/sky.jpg");
+	background-repeat:repeat; 
+   
+    background-image: url("../img/sea_wallpaper.jpg");
 	background-repeat: no-repeat;
+	position: top center; */
+
 }
-*/
+
 
 #application-buttons {
 	text-align: center;
@@ -119,8 +119,9 @@ p {
 }
 
 .sectionBackground.organizers {
-	background-image: url("../img/thalassa.jpg");
-	background-repeat: repeat;
+	background-image: url("../img/images4.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #organizers, #participants {
@@ -157,8 +158,25 @@ textarea {
 }
 
 .sectionBackground.about {
-	background-image: url("../img/sky.jpg");
-	background-repeat: repeat;
+	background-image: url("../img/images2.jpg");
+	background-repeat: no-repeat;
 	position: top center;
     
+}
+.sectionBackground.participants {
+	background-image: url("../img/images3.jpg");
+	background-repeat: no-repeat;
+	position: top center;
+}
+.sectionBackground.home {
+	background-image: url("../img/images.jpg");
+	background-repeat: no-repeat;
+	position: top center;
+    
+}
+
+.sectionHeader {
+	width=100%
+	height:30px;
+
 }

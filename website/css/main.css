@@ -20,6 +20,11 @@ header {
 	z-index: 20;
 }
 
+.navbar .brand {
+	padding-top: 6px;
+	padding-bottom: 0px;
+}
+
 header > .navbar-inner {
 	border-radius: 0;
 	-moz-border-radius: 0;
@@ -82,7 +87,7 @@ p {
 
 #home .content p {
 	text-indent: 50px;
-	text-align: center;
+	text-align: justify;
 }
 
 #home .content .tagline {
@@ -92,11 +97,17 @@ p {
 	margin: 10px;
 }
 
+#home .column:last-child {
+	padding-top: 15px;
+}
+
+/*
 #home {
 	background-image: url("../img/home-background.jpg");
 	background-position: bottom center;
 	background-repeat: no-repeat;
 }
+*/
 
 #application-buttons {
 	text-align: center;
@@ -112,7 +123,7 @@ p {
 	background-repeat: repeat;
 }
 
-#organizers {
+#organizers, #participants {
 	padding-top: 45px;
 }
 
@@ -134,6 +145,10 @@ textarea {
 	
 #contact div:last-child h2 {
 	margin-top: 0;
+}
+
+#contact legend, #contact h2, #contact h3, #contact .phone, #contact a:hover {
+	color: whiteSmoke;
 }
 
 #map-container {

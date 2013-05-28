@@ -58,7 +58,19 @@
 					position: [39.96392120000001, 23.3804437],
 					title: 'Kalandra University Camp (Posidi)'
 				};
-				var markers = [NTUAMarker, AridaiaMarker, PosidiMarker];
+				var ThessalonikiMarker = {
+					position: [40.639358, 22.943817],
+					title: 'Thessaloniki'
+				}
+				var VerginaMarker = {
+					position: [40.487758,22.316058],
+					title: 'Vergina'
+				}
+				var EdessaMarker = {
+					position: [40.80361,22.054869],
+					title: 'Edessa'
+				}
+				var markers = [NTUAMarker, AridaiaMarker, PosidiMarker, ThessalonikiMarker, VerginaMarker, EdessaMarker];
 				var mapMarkers = [];
 				function initialize() {
 					var mapOptions = {
@@ -133,7 +145,7 @@
 						It is famous for its natural healing baths. The water is coming from the mountains and 
 						the whole experience is really magnificent.
 					</div>	
-					</div>
+				</div>
 				<div data-title="Kalandra University Camp (Posidi)" class="about texts">
 					<div style="float:left; margin-left: 10px; margin-top:60px;"><a href="http://www.camping.auth.gr/"><img src="img/poseidi.jpg"/></a></div>
 					<div style="float:right; margin-left: 10px; margin-top:60px; margin-right:15px;"><a href="http://www.camping.auth.gr/"><img src="img/poseidi3.jpg"/></a></div>
@@ -150,7 +162,30 @@
 						projects and develops activities with the aim to raise environmental awareness.
 					</div>	
 				</div>
-			</div>
+				<div data-title="Thessaloniki" class="about texts" style="height: 460px;">
+					<div style="float:left;"><a href="http://wikitravel.org/en/Thessaloniki"><img src="img/Thessaloniki.png"/></a></div>
+					<div style="float:left; width:770px; height:333px; margin-left:15px; margin-top:20px; ">
+					<b>Thessaloniki</b> also known as Salonica, is the second-largest city in Greece and the capital of the region of Central Macedonia as well as the capital of the Decentralized Administration of Macedonia and Thrace. Its honorific title is Συμπρωτεύουσα (Symprotévusa), literally "co-capital", and stands as a reference to its historical status as the Συμβασιλεύουσα (Symvasilévousa), "co-reigning" city of the Byzantine Empire, alongside Constantinople.
+				<p></p>	Thessaloniki is Greece's second major economic, industrial, commercial and political centre, and a major transportation hub for the rest of southeastern Europe; its commercial port is also of great importance for Greece and the southeastern European hinterland. The city is renowned for its festivals, events and vibrant cultural life in general, and is considered to be Greece's cultural capital. Events such as the Thessaloniki International Trade Fair and the Thessaloniki International Film Festival are held annually, while the city also hosts the largest bi-annual meeting of the Greek diaspora. In 2014 Thessaloniki will be the European Youth Capital.
+				<p></p>	Founded in 315 BC by Cassander of Macedon, Thessaloniki's history spans some 2,300 years. An important metropolis by the Roman period, Thessaloniki was the second largest and wealthiest city of the Byzantine Empire. Thessaloniki is home to numerous notable Byzantine monuments, including the Paleochristian and Byzantine monuments of Thessaloniki, a UNESCO World Heritage Site, as well as several Roman, Ottoman and Sephardic Jewish structures. The city's main university, Aristotle University, is the largest in Greece and the Balkans.
+				<p></p>	In addition to its historic roots, Thessaloniki is also a very popular tourist destination in Greece. In 2010, Lonely Planet ranked Thessaloniki as the world's fifth-best party city worldwide, comparable to other cities such as Dubai and Montreal.
+					</div>
+				</div>
+				<div data-title="Vergina" class="about texts">
+					<div style="float:left; margin-left:15px; margin-top:60px;"><a href="http://whc.unesco.org/en/list/780"><img src="img/Vergina.jpg"/></a></div>
+					<div style="float:left; width:535px; height:333px; margin-left:15px; margin-top:30px; ">
+					<b>Vergina</b> is a small town in northern Greece, located in the regional unit of Imathia, Central Macedonia. Since the 2011 local government reform it is part of the municipality Veroia, of which it is a municipal unit. The town became internationally famous in 1977, when the Greek archaeologist Manolis Andronikos unearthed what he claimed was the burial site of the kings of Macedon, including the tomb of Philip II, father of Alexander the Great. The finds established the site as the ancient Aigai.
+			<p></p> The modern town of Vergina is about 13 km south-east of the district centre of Veroia and about 80 km south-west of Thessaloniki, the capital of Greek Macedonia. The town has a population of about two thousand people and stands on the foothills of Mount Pieria, at an elevation of 120 m (360 ft) above sea level.
+					</div>	
+				</div>
+				<div data-title="Edessa" class="about texts">
+					<div style="float:left;margin-left:15px; margin-top:30px;"><a href="http://www.edessacity.gr/"><img src="img/edessa.jpg" height="262px"; width="350"/></a></div>
+					<div style="float:left; width:535px; height:333px; margin-left:15px; margin-top:30px; ">
+					<b>Edessa</b>, is a city in northern Greece and the capital of the Pella regional unit, in the Central Macedonia region of Greece. It was also the capital of the defunct province of the same name.
+				<p></p>Archaeological remains have been discovered on the site of ancient Edessa, just below the modern city. The walls and the agora have been unearthed so far.
+				<p></p>Edessa is also known as the city of waters because of its well-known waterfalls, the biggest in the Balkans. The unique privilege of the waterfalls of Edessa is that they are right in the city centre. Apart from watching the falls, you can also walk under them, in a small cave in the rock and enjoy the feeling of water drops all around!
+					</div>	
+				</div>
 		</div>
 		<script>
 			var closeButton = document.getElementById('close-button');

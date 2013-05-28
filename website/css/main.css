@@ -133,6 +133,11 @@ p {
 	display: inline-block;
 }
 
+/*#participants .thumbnail {
+	background: white;
+	display: inline-block;
+} */
+
 .sectionBackground.contact {
 	background-image: url("../img/images5.jpg");
 	background-repeat: no-repeat;
@@ -158,7 +163,7 @@ textarea {
 }
 
 .sectionBackground.about {
-	background-image: url("../img/images2.jpg");
+	background-image: url("../img/Summer.jpg");
 	background-repeat: no-repeat;
 	position: top center;
     

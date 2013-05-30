@@ -155,8 +155,11 @@ textarea {
 	margin-top: 0;
 }
 
-#contact legend, #contact h2, #contact h3, #contact .phone, #contact a:hover {
+#contact legend, #contact h2, #contact h3, #contact .phone, #contact a:hover, #contact .p {
 	color: whiteSmoke;
+}
+#contact .p, #contact .phone {
+	font-size: 20px;
 }
 
 #map-container {

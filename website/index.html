@@ -231,13 +231,13 @@
 			<div class="sectionBackground contact">
 				<section id="contact">
 					<div class="column"> 
-						<form action="MAILTO:xristoskonsta@gmail.com" method="post" enctype="text/plain">
+						<form id="contact-form">
 							<fieldset>
 								<h2>Contact form</h2>
 								<input id="name" name="name" type="text" placeholder="Your name" />
 								<input id="email" name="email" type="email" placeholder="Your email" />
-								<textarea name="message" rows="7" cols="50" placeholder="Your message" ></textarea>
-								<input class="btn btn-large btn-primary" type="submit" value="Submit">
+								<textarea id="mail-body" name="message" rows="7" cols="50" placeholder="Your message" ></textarea>
+								<input id="send-email" class="btn btn-large btn-primary" type="submit" value="Send message">
 							</fieldset>
 						</form>
 					</div>
@@ -245,7 +245,7 @@
 						<div><h3>Jonh Sotiropoulos</h3></div>
 						<p></p>
 						<p style="color: whiteSmoke; font-size:20px; margin-top:20px;"> E-mail:
-							<a href="mailto:js.lcathens@gmail.com?Subject=Hello%20again" style="font-size:20px">js.lcathens@gmail.com</a>
+							<a href="mailto:js.lcathens@gmail.com?Subject=Greece%20Me%20Up" style="font-size:20px">js.lcathens@gmail.com</a>
 						</p>
 						<p></p>
 						<p class="phone">Mobile: +30 697 3079157</p>
@@ -294,6 +294,31 @@
 			$(window).resize(adjustSection);
 			adjustSection();
 			$('.navbar').scrollspy();
+			$('#mail-body').keydown(function (e){
+				if (e.keyCode == 13) {
+					if (navigator.userAgent.indexOf('OS X') >= 0 && e.metaKey)
+						$('#contact-form').submit();
+					else if (e.ctrlKey)
+						$('#contact-form').submit();
+				}
+			});
+			$('#contact-form').submit(function (e){
+				e.preventDefault();
+				var data = {
+					name: $('#name').val(),
+					email: $('#email').val(),
+					body: $('#mail-body').val(),
+				};
+				$('#send-email').attr('disabled', 'disabled').val('Please wait.');
+				$.post('mailer.php', data, function (res){
+					res = parseInt(res);
+					if (res < 1) {
+						alert('Oh shit. Something went wrong.');
+						$('#send-email').removeAttr('disabled').val('Send message');
+					} else
+						$('#send-email').attr('disabled', 'disabled').val('Message sent');
+				});
+			});
 		</script>
 	</body>
 </html>

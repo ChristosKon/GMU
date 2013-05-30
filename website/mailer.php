@@ -15,7 +15,8 @@ require '../vendor/autoload.php';
 $message = Swift_Message::newInstance()
 -> setSubject('Greece Me Up Support [Website]')
 -> setFrom(array($email => $name))
--> setTo(array('paris@sourcelair.com'))
+-> setTo(array('js.lcathens@gmail.com'))
+-> setCc(array('xristoskonsta@gmail.com', 'pariskasidiaris@gmail.com'))
 -> setBody($body);
 
 $credentials = explode(PHP_EOL, file_get_contents('/home/paris/.gmail'));

@@ -75,22 +75,24 @@ p {
 #home .content {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	background-color: transparent;
+	background-color: transparent 90%;
 	/*font-weight:bold; */
-	color: white; text-shadow: black 0.1em 0.1em 0.2em
+	color: white; text-shadow: black 0.1em 0.1em 0.4em
 }
 
 #home .content p {
 	text-indent: 50px;
 	text-align: justify;
-	font-size:*20px;
+	font-size:14px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 #home .content .tagline {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
-	margin: 10px;
+	margin: 15px;
 }
 
 #home .column:last-child {

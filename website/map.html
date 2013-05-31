@@ -9,7 +9,6 @@
 		  #map-canvas { height: 100% }
 		  #info {
 		  	position: fixed;
-		  	top: 0;
 		  	bottom: 0;
 		  	left: 0;
 		  	right: 0;
@@ -33,7 +32,7 @@
 		  	cursor: pointer;
 		  	float: right;
 			line-height: 30px;
-			font-size: 16px;
+			font-size: 24px;
 			margin-right: 15px;
 		  }
 		  #info-content {
@@ -192,9 +191,11 @@
 			infoWindow = document.getElementById('info');
 			infoTitle = document.getElementById('info-title');
 			infoContent = document.getElementById('info-content');
-			closeButton.onclick = function () {
+			function hideInfo () {
 				infoWindow.style.display = 'none';
 			}
+			closeButton.onclick = hideInfo;
+			infoWindow.onclick = hideInfo;
 			document.onkeydown = function (e) {
 				if (e.keyCode == 27)
 					infoWindow.style.display = 'none';

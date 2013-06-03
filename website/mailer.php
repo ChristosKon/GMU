@@ -21,7 +21,7 @@ $message = Swift_Message::newInstance()
 
 $credentials = explode(PHP_EOL, file_get_contents('/home/paris/.gmail'));
 
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+$transport = Swift_SmtpTransport::newInstance('smtp.ntua.gr', 587, 'tls')
 -> setUsername($credentials[0])
 -> setPassword($credentials[1]);
 

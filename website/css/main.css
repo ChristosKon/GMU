@@ -121,7 +121,7 @@ p {
 }
 
 .sectionBackground.organizers {
-	background-image: url("../img/nature.jpg");
+	background-image: url("../img/voutia.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -206,6 +206,6 @@ textarea {
 }
 
 #sponsors div {
-	width=100%
-	height=100%
+	width:516px;
+	height:250px;
 }

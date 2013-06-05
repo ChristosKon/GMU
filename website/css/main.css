@@ -121,7 +121,7 @@ p {
 }
 
 .sectionBackground.organizers {
-	background-image: url("../img/images4.jpg");
+	background-image: url("../img/nature.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -199,4 +199,13 @@ textarea {
 	height:333px
 }
 
+.sectionBackground.sponsors {
+	background-image: url("../img/thalassa.jpg");
+	background-repeat: repeat;
+	position: top center;	
+}
 
+#sponsors div {
+	width=100%
+	height=100%
+}

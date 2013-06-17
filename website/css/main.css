@@ -205,10 +205,12 @@ textarea {
 	position: top center;	
 }
 .sectionBackground.schedule {
-	
+	background-image: url("../img/nature.jpg");
+	background-repeat: no-repeat;
+	position: top center;
 }
 
-#schedule {
+#schedule div {
 	
 }
 

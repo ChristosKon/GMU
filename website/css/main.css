@@ -135,10 +135,10 @@ p {
 	display: inline-block;
 }
 
-/*#participants .thumbnail {
+#participants .thumbnail {
 	background: white;
 	display: inline-block;
-} */
+} 
 
 .sectionBackground.contact {
 	background-image: url("../img/images5.jpg");
